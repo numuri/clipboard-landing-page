@@ -63,6 +63,11 @@ body {
   box-shadow: 0 4px 0 rgba(21, 160, 164, 1);
   cursor: pointer;
   margin-bottom: 1.5em;
+  transition: all 0.5s ease-out;
+}
+
+.btn-ios:hover {
+  background-color: hsl(171, 67%, 47%);
 }
 
 .btn-mac {
@@ -74,6 +79,11 @@ body {
   border: 0;
   box-shadow: 0 4px 0 rgb(97, 78, 255);
   cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.btn-mac:hover {
+  background-color: hsl(233, 100%, 74%);
 }
 
 /* One */

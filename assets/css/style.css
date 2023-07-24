@@ -1,0 +1,289 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --strongCyan: hsl(171, 66%, 44%);
+  --lightBlue: hsl(233, 100%, 69%);
+  --darkGrayishBlue: hsl(210, 10%, 33%);
+  --grayishBlue: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  background-image: url(../images/bg-header-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.section {
+  margin: 0 30px 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section .logo {
+  width: 5em;
+  height: 5em;
+  margin-bottom: 3em;
+}
+
+.title {
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.paragraph {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.8em;
+  color: var(--grayishBlue);
+  margin-bottom: 3em;
+}
+
+.btn-ios {
+  width: 100%;
+  height: 50px;
+  background-color: var(--strongCyan);
+  color: white;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: 0 4px 0 rgba(21, 160, 164, 1);
+  cursor: pointer;
+  margin-bottom: 1.5em;
+}
+
+.btn-mac {
+  width: 100%;
+  height: 50px;
+  background-color: var(--lightBlue);
+  color: white;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: 0 4px 0 rgb(97, 78, 255);
+  cursor: pointer;
+}
+
+/* One */
+.section.one > .title {
+  font-size: 1.8em;
+}
+
+/* Two */
+.section.two {
+  margin-bottom: 1em;
+}
+
+.section.two > .title {
+  font-size: 1.7em;
+}
+
+/* Three */
+.section.three .img-computer {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.section.three .component > .paragraph {
+  font-size: 0.9em;
+}
+
+/* Four */
+.section.four > .title {
+  font-size: 1.7em;
+}
+.section.four > .img-device {
+  width: 100%;
+}
+
+/* Five */
+.section.five > .title {
+  font-size: 1.7em;
+}
+
+.section.five .component-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.component-flex .sub-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-component .icon {
+  width: 50px;
+  margin-bottom: 2em;
+}
+
+/* Six */
+.section.six .component-flex > .sub-component {
+  gap: 5em;
+}
+
+/* Main Footer */
+.footer-main {
+  background-color: #eeeeee1c;
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.footer-main .logo {
+  width: 3em;
+  height: 3em;
+}
+
+.footer-main .link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.footer-main .main-link {
+  text-decoration: none;
+}
+
+.footer-main .component-flex {
+  display: flex;
+  gap: 2.5em;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+
+  .container {
+    width: 1440px;
+  }
+
+  /* One */
+  .section.one .logo {
+    width: 7em;
+    height: 7em;
+  }
+
+  .section.one .paragraph {
+    width: 45%;
+  }
+
+  .section.one .component-button,
+  .section.seven .component-button {
+    width: 35%;
+    display: flex;
+    gap: 1em;
+  }
+
+  /* Two */
+  .section.two .paragraph {
+    width: 50%;
+  }
+
+  /* Three */
+  .section.three {
+    margin-bottom: 5em;
+    flex-direction: row;
+    gap: 5em;
+  }
+
+  .section.three .img-computer {
+    width: 60%;
+    margin-left: -5em;
+  }
+
+  .section.three .component > .title,
+  .section.three .component > .paragraph {
+    width: 65%;
+    text-align: left;
+  }
+
+  /* Four */
+  .section.four {
+    margin-bottom: 2em;
+  }
+  .section.four .paragraph {
+    width: 50%;
+  }
+
+  .section.four .img-device {
+    width: 70%;
+  }
+
+  /* Five */
+  .section.five .component-flex {
+    width: 90%;
+    margin-left: -5em;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .section.five .component-flex .sub-component:first-child .paragraph {
+    width: 80%;
+  }
+
+  .section.five .component-flex .sub-component:nth-child(2) {
+    margin-right: 3em;
+  }
+
+  .section.five .component-flex .sub-component:nth-child(2) .paragraph {
+    width: 100%;
+  }
+
+  .section.five .component-flex .sub-component:last-child {
+    margin-top: 1em;
+  }
+
+  .section.five .component-flex .sub-component:last-child .paragraph {
+    width: 120%;
+  }
+
+  /* Six */
+  .section.six .component-flex > .sub-component {
+    flex-direction: row;
+  }
+
+  /* Seven */
+  .section.seven .paragraph {
+    width: 50%;
+  }
+
+  /* Footer */
+  .footer-main {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5em;
+  }
+
+  .footer-main .link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .main-link {
+    align-self: flex-start;
+  }
+
+  .footer-main .component-flex {
+    gap: 1em;
+    margin-left: 14em;
+  }
+}
